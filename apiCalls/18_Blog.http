@@ -1,0 +1,23 @@
+### 
+GET http://localhost:3000/blog/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/blog/detail/blog1 HTTP/1.1
+
+### 
+GET http://localhost:3000/blog/template HTTP/1.1
+
+### 
+POST http://localhost:3000/blog/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "blog3",
+    "data": {
+		"Datum": "10.04.2022",
+		"Ersteller": "Max Mueller",
+		"Text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
+	}
+}
+
+###########################################################

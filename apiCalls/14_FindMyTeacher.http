@@ -1,0 +1,26 @@
+### 
+GET http://localhost:3000/findmyteacher/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/findmyteacher/detail/Ajradini HTTP/1.1
+
+### 
+#GET http://localhost:3000/findmyteacher/template HTTP/1.1
+
+### 
+POST http://localhost:3000/findmyteacher/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Muster",
+    "data" : [
+        {
+            "Tag": "Mo",
+            "Fach": "ICT",
+            "Zeit": "07:30-09:00",
+            "Zimmer": "B 501"
+        }
+    ]
+}
+
+###########################################################

@@ -1,0 +1,35 @@
+### 
+GET http://localhost:3000/vote/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/vote/detail/vote4 HTTP/1.1
+
+### 
+GET http://localhost:3000/vote/template HTTP/1.1
+
+### 
+POST http://localhost:3000/vote/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "vote4",
+    "data": {
+        "title": "Treffen",
+        "choices": {
+            "Montag": 0,
+            "Dienstag": 0,
+            "Donnerstag": 0
+        }
+    }
+}
+
+### 
+POST http://localhost:3000/vote/voteone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "vote4",
+    "vote": "Dienstag"
+}
+
+###########################################################

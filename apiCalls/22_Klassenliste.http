@@ -1,0 +1,19 @@
+### 
+GET http://localhost:3000/klassenliste/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/klassenliste/detail/IN21a HTTP/1.1
+
+### 
+#GET http://localhost:3000/klassenliste/template HTTP/1.1
+
+### 
+POST http://localhost:3000/klassenliste/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "IB20a",
+    "data": ["Manfred Metzger", "Willi Muster"]
+}
+
+###########################################################

@@ -1,0 +1,41 @@
+### 
+GET http://localhost:3000/stundenprep/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/stundenprep/detail/M122B1 HTTP/1.1
+
+### 
+GET http://localhost:3000/stundenprep/template HTTP/1.1
+
+### 
+POST http://localhost:3000/stundenprep/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "yxz",
+    "data": {
+
+    "Version": "",
+  "Author": "",
+  "Klasse": "",
+  "Jahr": "",
+  "Zimmer": "",
+  "LP": "",
+  "Unterrichtseinheiten": [
+    {
+      "Datum": "",
+      "Uhrzeit": "",
+      "DauerMin": "",
+      "Thema": "",
+      "Sozialform": "",
+      "Material": []
+    }
+  ],
+  "VorbereitungUnterricht": "",
+  "Tagesziele": "",
+  "PendenzenNaechsterUnterricht": "",
+  "Hausaufgaben": ""
+    }
+}
+
+###########################################################

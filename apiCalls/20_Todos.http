@@ -1,0 +1,45 @@
+### 
+GET http://localhost:3000/todos/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/todos/detail/todo2 HTTP/1.1
+
+### 
+GET http://localhost:3000/todos/template HTTP/1.1
+
+### 
+POST http://localhost:3000/todos/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "todo3",
+    "data": {
+        "title": "Rechnungen",
+		"task": "bezahle Rechnungen...",
+		"date": "10.07.2022",
+		"done": false
+    }
+}
+
+### 
+POST http://localhost:3000/todos/changeone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "todo3",
+    "data": {
+        "title": "Rechnungen",
+		"task": "bezahle Rechnungen...",
+		"date": "10.07.2022",
+		"done": true
+    }
+}
+### 
+POST http://localhost:3000/todos/deleteone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "todo3"
+}
+
+###########################################################

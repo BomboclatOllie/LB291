@@ -1,0 +1,42 @@
+### 
+GET http://localhost:3000/bewertungshilfeprobe/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/bewertungshilfeprobe/detail/M403 HTTP/1.1
+
+### 
+GET http://localhost:3000/bewertungshilfeprobe/template HTTP/1.1
+
+### 
+POST http://localhost:3000/bewertungshilfeprobe/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "M187",
+    "data": {
+        "Probe1": {
+    "Beschreibung": "",
+    "Hinweise": "",
+    "Gewichtung": 1
+  },
+  "Probe2": {
+    "Beschreibung": "",
+    "Hinweise": "",
+    "Gewichtung": 1
+  },
+  "Portfolio": {
+    "Beschreibung": "",
+    "Hinweise": "",
+    "Gewichtung": 2
+  },
+  "Klassen": [
+    {
+      "Name": "xyz",
+      "Datum": "01.01.2022",
+      "Schueler": []
+    }
+  ]
+    }
+}
+
+###########################################################

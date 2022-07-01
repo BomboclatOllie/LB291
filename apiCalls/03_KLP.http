@@ -1,0 +1,36 @@
+### 
+GET http://localhost:3000/klp/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/klp/detail/M288 HTTP/1.1
+
+### 
+GET http://localhost:3000/klp/template HTTP/1.1
+
+### 
+POST http://localhost:3000/klp/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "M287",
+    "data": {
+        "Kompetenz": "CSS",
+        "HZ1": "CSS1",
+        "HZ2": "CSS2",
+        "HZ3": "CSS3",
+        "HZ4": "CSS4",
+        "HZ5": "CSS5",
+        "HZ6": "CSS6",
+        "Objekt": "Lorem ipsum",
+        "Leistungsziele": [
+            {
+                "LZNr": "LZ1",
+                "Leistungsziel": "Lorem Ipsum",
+                "SelbsteinschätzungVor": "-",
+                "SelbsteinschätzungNach": "+"
+            }
+        ]
+    }
+}
+
+###########################################################

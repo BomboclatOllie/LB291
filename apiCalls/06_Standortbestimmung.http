@@ -1,0 +1,39 @@
+### 
+GET http://localhost:3000/standortbestimmung/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/standortbestimmung/detail/Weber HTTP/1.1
+
+### 
+GET http://localhost:3000/standortbestimmung/template HTTP/1.1
+
+### 
+POST http://localhost:3000/standortbestimmung/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Mueller",
+    "data": {
+		"SozialesVerhalten11": "nicht erfüllt",
+		"SozialesVerhalten12": "teilw. erfüllt",
+		"SozialesVerhalten13": "voll erfüllt",
+		"SozialesVerhalten21": "voll erfüllt",
+		"SozialesVerhalten22": "teilw. erfüllt",
+		"SozialesVerhalten23": "voll erfüllt",
+		"SozialesVerhalten24": "voll erfüllt",
+		"SozialesVerhalten31": "nicht erfüllt",
+		"SozialesVerhalten32": "teilw. erfüllt",
+		"SozialesVerhalten33": "nicht erfüllt",
+		"SozialesVerhalten34": "teilw. erfüllt",
+		"SozialesVerhalten35": "voll erfüllt",
+		"SozialesVerhalten41": "teilw. erfüllt",
+		"SozialesVerhalten42": "teilw. erfüllt",
+		"SozialesVerhalten43": "nicht erfüllt",
+		"SozialesVerhalten44": "teilw. erfüllt",
+		"Zielvereinbarung1": "Ziele",
+		"Zielvereinbarung2": "Massnahmen",
+		"Zielvereinbarung3": "Umsetzung"
+    }
+}
+
+###########################################################

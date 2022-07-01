@@ -1,0 +1,19 @@
+### 
+GET http://localhost:3000/antitab/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/antitab/detail/coding HTTP/1.1
+
+### 
+#GET http://localhost:3000/antitab/template HTTP/1.1
+
+### 
+POST http://localhost:3000/antitab/addone HTTP/1.1
+content-type: application/json
+
+{
+    "category": "newCategory",
+    "url": "https://www.w3schools.com"
+}
+
+###########################################################

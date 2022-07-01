@@ -1,0 +1,30 @@
+### 
+GET http://localhost:3000/notizenapp/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/notizenapp/detail/note1 HTTP/1.1
+
+### 
+GET http://localhost:3000/notizenapp/template HTTP/1.1
+
+### 
+POST http://localhost:3000/notizenapp/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "note3",
+    "data": {
+        "title": "RaspberryPi",
+		"text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+		"category": ["Hobby", "Programmieren"]
+    }
+}
+
+### 
+POST http://localhost:3000/notizenapp/deleteone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "note3"
+}
+###########################################################

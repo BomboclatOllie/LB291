@@ -1,0 +1,29 @@
+### 
+GET http://localhost:3000/lernjournal/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/lernjournal/detail/M319 HTTP/1.1
+
+### 
+GET http://localhost:3000/lernjournal/template HTTP/1.1
+
+### 
+POST http://localhost:3000/lernjournal/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "M187",
+    "data": {
+        "ModulTitel": "ICT-Arbeitsplatz mit Betriebssystem in Betrieb nehmen",
+        "Name": "Weber",
+        "Vorname": "Max",
+        "Lernjournale": [
+            {
+                "Datum": "15.04.2022",
+                "Tätigkeiten": "Einführung ins Modul..."
+            }
+        ]
+    }
+}
+
+###########################################################

@@ -1,0 +1,29 @@
+### 
+GET http://localhost:3000/stundenplanviewer/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/stundenplanviewer/detail/IN21a HTTP/1.1
+
+### 
+GET http://localhost:3000/stundenplanviewer/template HTTP/1.1
+
+### 
+POST http://localhost:3000/stundenplanviewer/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "ME",
+    "data": {
+			"Faecher" :[
+				{
+                    "Tag": "Mo",
+					"Fach": "ICT",
+					"Zeit": "07:30-09:00",
+					"Lehrperson": "Bachofner M.",
+					"Zimmer": "B 501"
+				}
+			]
+		}
+}
+
+###########################################################

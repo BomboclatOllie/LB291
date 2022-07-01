@@ -1,0 +1,46 @@
+### 
+GET http://localhost:3000/serienbrieflb/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/serienbrieflb/detail/M403 HTTP/1.1
+
+### 
+GET http://localhost:3000/serienbrieflb/template HTTP/1.1
+
+### 
+POST http://localhost:3000/serienbrieflb/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "M122",
+    "data": {
+        "ModulNummer": "xyz",
+  "ModulTitel": "xyz",
+  "LBVersion": "xyz",
+  "Kriterien": [
+    {
+      "Kriterium": "xyz",
+      "Handlungsziel": "",
+      "Gewichtung": ""
+    }
+  ],
+  "Klassen": [
+    {
+      "Klasse": "xyz",
+      "Datum": "01.01.2022",
+      "Experte": "xyz",
+      "Schueler": [
+        {
+          "Name": "xyz",
+          "Vorname": "xyz",
+          "NoteProbe": "",
+          "Punkte": [],
+          "Bemerkungen": []
+        }
+      ]
+    }
+  ]
+    }
+}
+
+###########################################################

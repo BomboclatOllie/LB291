@@ -1,0 +1,31 @@
+### 
+GET http://localhost:3000/webauftraege/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/webauftraege/detail/LA8405 HTTP/1.1
+
+### 
+GET http://localhost:3000/webauftraege/template HTTP/1.1
+
+### 
+POST http://localhost:3000/webauftraege/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "LA8407",
+    "data": {
+        "Titel": "Fetch",
+		"Modul": "291 Mediamatiker/in EFZ",
+		"Author": "Almir Ajradini",
+		"Version": "V0.1",
+		"Hilfsmittel": "Das Internet, Links im Anhang, Video auf Moodle",
+		"Nachweis": "Laden Sie ihre Lösung auf Moodle hoch.",
+		"Sozialform": "Einzelarbeit / Partnerarbeit",
+		"Leistungsziele": "5.6 – 5.7",
+		"Ausgangslage": "Moderne Webseiten, sofern es sich nicht um Webseiten ...",
+		"Aufgabenstellung": "Erstellen Sie eine clientseitige Suche...",
+		"Teilaufträge": ["Nehmen Sie die Node.js API in Betrieb (30min)", "Ersetzen der lokalen JSON Daten durch API Request (45min)"]
+    }
+}
+
+###########################################################

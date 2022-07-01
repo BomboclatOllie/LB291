@@ -1,0 +1,22 @@
+### 
+
+GET http://localhost:3000/faq HTTP/1.1
+
+### 
+GET http://localhost:3000/faq/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/faq/detail/IN21a_2021 HTTP/1.1
+
+### 
+GET http://localhost:3000/faq/template HTTP/1.1
+
+### 
+POST http://localhost:3000/faq/addone HTTP/1.1
+content-type: application/json
+
+{
+    
+}
+
+###########################################################

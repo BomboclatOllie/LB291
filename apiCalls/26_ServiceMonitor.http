@@ -1,0 +1,22 @@
+### 
+
+GET http://localhost:3000/servicemonitor HTTP/1.1
+
+### 
+GET http://localhost:3000/servicemonitor/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/servicemonitor/detail/IN21a_2021 HTTP/1.1
+
+### 
+GET http://localhost:3000/servicemonitor/template HTTP/1.1
+
+### 
+POST http://localhost:3000/servicemonitor/addone HTTP/1.1
+content-type: application/json
+
+{
+    
+}
+
+###########################################################

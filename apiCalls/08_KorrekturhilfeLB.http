@@ -1,0 +1,35 @@
+### 
+GET http://localhost:3000/korrekturhilfelb/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/korrekturhilfelb/detail/LB403V6 HTTP/1.1
+
+### 
+GET http://localhost:3000/korrekturhilfelb/template HTTP/1.1
+
+### 
+POST http://localhost:3000/korrekturhilfelb/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "M122",
+    "data": {
+        "Kriterien": [
+    {
+      "Beschreibung": "",
+      "Hinweise": "",
+      "Gewichtung": 1,
+      "HZ": 1
+    }
+  ],
+  "Klassen": [
+    {
+      "Name": "xyz",
+      "Datum": "01.01.2022",
+      "Schueler": []
+    }
+  ]
+    }
+}
+
+###########################################################

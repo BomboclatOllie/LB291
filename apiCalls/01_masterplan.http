@@ -1,0 +1,66 @@
+### 
+GET http://localhost:3000/masterplan/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/masterplan/detail/ME20b_2021 HTTP/1.1
+
+### 
+GET http://localhost:3000/masterplan/template HTTP/1.1
+
+### 
+POST http://localhost:3000/masterplan/addOne HTTP/1.1
+content-type: application/json
+
+{
+    "name": "ME20a_2021",
+    "data": {
+        "Klasse": "Test",
+        "Jahr": "2000",
+        "Zimmer": "234",
+        "LP": "almir",
+        "Unterrichtsstart": "14.04.2022",
+        "Module": ["123","456"],
+        "LB": [
+            {
+            "LB123": "18.12.2021"
+            },
+            {
+            "LB456": "25.06.2022"
+            }
+        ],
+        "KeinUnterricht": [
+            {
+            "Herbstferien": "08.10.2021"
+            },
+            {
+            "Herbstferien": "15.10.2021"
+            },
+            {
+            "Weihnachtsferien": "31.12.2021"
+            },
+            {
+            "Weihnachtsferien": "07.01.2022"
+            },
+            {
+            "Sportferien": "11.02.2022"
+            },
+            {
+            "Sportferien": "18.02.2022"
+            },
+            {
+            "Frühlingsferien": "15.04.2022"
+            },
+            {
+            "Frühlingsferien": "22.04.2022"
+            },
+            {
+            "Prüfungswoche": "03.06.2022"
+            },
+            {
+            "Sommerferien": "08.07.2022"
+            }
+        ]
+    }
+}
+
+###########################################################

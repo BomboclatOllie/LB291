@@ -1,0 +1,31 @@
+### 
+GET http://localhost:3000/groupcreator/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/groupcreator/detail/IN21a HTTP/1.1
+
+### 
+GET http://localhost:3000/groupcreator/template HTTP/1.1
+
+### 
+POST http://localhost:3000/groupcreator/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "IN21b",
+    "data": {
+		"Schueler": ["Muster Max", "Weber Max", "Meier Hans", "Mueller Lena"],
+		"Gruppen": [
+			{
+				"GruppenName": "G1",
+				"Mitglieder": ["Weber Max", "Meier Hans"]
+			},
+			{
+				"GruppenName": "G2",
+				"Mitglieder": ["Muster Max", "Mueller Lena"]
+			}
+		]
+	}
+}
+
+###########################################################

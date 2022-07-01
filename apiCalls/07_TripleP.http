@@ -1,0 +1,45 @@
+### 
+GET http://localhost:3000/triplep/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/triplep/detail/M293 HTTP/1.1
+
+### 
+GET http://localhost:3000/triplep/template HTTP/1.1
+
+### 
+POST http://localhost:3000/triplep/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "M122",
+    "data": {
+		"Probe1": {
+			"Beschreibung": "LA_Aufgabe_PowerShell",
+			"AbgabeDatum": "05.05.2022",
+			"Anforderungen": "Aufgabe Lösen..."
+		},
+		"Probe2": {
+			"Beschreibung": "LA_Aufgabe_CMD",
+			"AbgabeDatum": "01.05.2022",
+			"Anforderungen": "Scripten..."
+		},
+		"Portfolio": {
+			"Beschreibung": "Frei wählbares Thema",
+			"AbgabeDatum": "15.05.2022",
+			"Anforderungen": "StandardPortfolio",
+			"Links": [
+				{
+					"Name": "Weber",
+					"Link": "www.portfolios.ch/weber"
+				},
+				{
+					"Name": "Muster",
+					"Link": "www.portfolios.ch/muster"
+				}
+			]
+		}
+	}
+}
+
+###########################################################

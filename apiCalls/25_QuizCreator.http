@@ -1,0 +1,22 @@
+### 
+
+GET http://localhost:3000/quizcreator HTTP/1.1
+
+### 
+GET http://localhost:3000/quizcreator/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/quizcreator/detail/IN21a_2021 HTTP/1.1
+
+### 
+GET http://localhost:3000/quizcreator/template HTTP/1.1
+
+### 
+POST http://localhost:3000/quizcreator/addone HTTP/1.1
+content-type: application/json
+
+{
+    
+}
+
+###########################################################

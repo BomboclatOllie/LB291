@@ -1,0 +1,36 @@
+### 
+GET http://localhost:3000/standardfeedback/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/standardfeedback/detail/IN20b HTTP/1.1
+
+### 
+GET http://localhost:3000/standardfeedback/template HTTP/1.1
+
+### 
+POST http://localhost:3000/standardfeedback/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "IB21b",
+    "data": {
+		"Datum": "07.03.2022",
+		"Fragen": [
+			"Abwechslungsreicher Unterricht",
+			"Verständlichkeit der Erklärungen",
+			"Respekt im Umgang",
+			"Gute Hilfestellungen",
+			"Nachvollziehbare Notensetzung",
+			"Regeln werden durchgesetzt",
+			"Bekanntgabe der Ziele"
+		],
+		"Bewertungen": [
+			[4, 5, 3, 5, 5, 3, 4],
+			[3, 4, 5, 3, 4, 5, 3],
+			[3, 4, 5, 3, 4, 5, 3],
+			[4, 5, 5, 3, 4, 4, 4]
+		]
+    }
+}
+
+###########################################################

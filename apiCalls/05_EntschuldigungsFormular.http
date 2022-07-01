@@ -1,0 +1,35 @@
+### 
+GET http://localhost:3000/entschuldigungsformular/getall HTTP/1.1
+
+### 
+GET http://localhost:3000/entschuldigungsformular/detail/MaxWeber HTTP/1.1
+
+### 
+GET http://localhost:3000/entschuldigungsformular/template HTTP/1.1
+
+### 
+POST http://localhost:3000/entschuldigungsformular/addone HTTP/1.1
+content-type: application/json
+
+{
+    "name": "MaxMueller",
+    "data": {
+        "Beruf": "Informatiker",
+		"Klasse": "IN20b",
+		"02.05.2022": {
+			"Grund": "verletzt",
+			"FreigabeBL": true,
+			"FreigabeEltern": true,
+			"FreigabeAusbilder": false,
+			"FreigabeLP": false,
+			"Absenzen": [
+				{
+					"LP": "SportLP",
+					"AnzahlLektionen": 1
+				}
+			]
+		}
+    }
+}
+
+###########################################################
